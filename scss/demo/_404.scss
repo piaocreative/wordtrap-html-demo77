@@ -1,0 +1,23 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+.error-banner {
+    height: 60rem;
+}
+
+.error-content {
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    bottom: 15rem;
+
+    a {
+        padding: 1rem 2.5rem;
+    }
+
+    // @include media-breakpoint-down(lg) {
+    //     bottom: 4rem;
+    // }
+}

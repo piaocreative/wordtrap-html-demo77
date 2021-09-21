@@ -1,0 +1,76 @@
+
+/* ----------------------------------------------------------------
+
+	pagetitle.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Page Title
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for page title. Thanks!
+-----------------------------------------------------------------*/
+
+#page-title {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	.title {
+		font-family: $heading-font;
+		line-height: 1.2;
+		font-weight: 400;
+	}
+
+	.buy-now-link {
+		text-decoration: none;
+		font-size: 1.25rem;
+		color: $white;
+		border-radius: 2rem;
+		letter-spacing: 0.05rem;
+		font-family: $heading-font;
+		font-weight: 700;
+
+		&:before {
+			position: relative;
+			display: inline-block;
+			content: "";
+			width: 2rem;
+			height: 2px;
+			background-color: $white;
+			margin-right: 1rem;
+			vertical-align: middle;
+		}
+	}
+
+	.go-home-link {
+		display: inline-block;
+		font-family: $body-font;
+		font-size: 0.8125rem;
+		padding: 0.5rem 1rem;
+		border-radius: 2rem;
+		border: 1px solid #d1b6b0;
+		text-decoration: none;
+		line-height: 1;
+		color: #d1b6b0;
+
+		&:hover {
+			color: $theme-color;
+			border-color: #d1b6b0;
+		}
+	}
+
+	p {
+		font-size: 1.0625rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		height: 22%;
+	}
+}

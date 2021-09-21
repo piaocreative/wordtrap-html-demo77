@@ -1,0 +1,50 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.about-banner {
+	position: relative;
+    bottom: -7rem;
+    margin-top: -5rem;
+}
+
+.categories {
+	margin-bottom: 3.5rem;
+
+	ul {
+		li {
+			margin-bottom: .3rem;
+
+			a {
+				display: inline-block;
+				width: 100%;
+				padding: 0.5rem 2rem;
+				background-color: $white;
+				font-family: $body-font;
+				font-size: 0.875rem;
+				color: $dark;
+				text-transform: uppercase;
+				text-decoration: none;
+				border-radius: 2rem;
+
+				&:hover {
+					background-color: $theme-color;
+					color: $white;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,84 @@
+/* ----------------------------------------------------------------
+
+	Contact.scss
+
+-----------------------------------------------------------------*/
+#contact-sidebar {
+	label {
+		font-family: $body-font;
+		font-weight: 300;
+		font-size: 0.875rem;
+		color: #caaca5;
+	}
+
+	input {
+		font-size: 0.875rem;
+	}
+
+	button {
+		padding: 1rem 2.5rem;
+	}
+
+	textarea {
+		border-radius: 1.5rem;
+	}
+}
+
+.contact-social {
+	ul {
+		padding: 0;
+		list-style: none;
+
+		li {
+			padding: 0 0.25rem;
+
+			&:last-child {
+				padding-right: 0;
+			}
+	
+			a {
+				color: $theme-color;		
+				background-color: $white;
+				display: inline-block;
+				line-height: 1.8125rem;
+				width: 2.8125rem;
+				height: 2.8125rem;		
+				vertical-align: middle;
+				text-align: center;
+				border-radius: 50%;	
+
+				@include transition(all 0.3s ease-in-out);
+	
+				&:hover {
+					background-color: $theme-color;
+					color: $white;
+				}
+	
+				i {
+					vertical-align: top;
+					line-height: 1.8125rem;
+					padding: 0.5rem;
+					font-size: 1.125rem;
+				}
+
+				&.contact {
+					color: $primary !important;
+					background-color: $white;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
+
+.map {
+	position: absolute;
+	top: 1rem;
+	right: 0;
+	width: 28%;
+
+	@include media-breakpoint-down(xl) {
+		position: relative;
+		width: 100%;
+	}
+}

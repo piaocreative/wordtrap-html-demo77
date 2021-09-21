@@ -1,0 +1,229 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	margin-bottom: 2rem;
+	position: relative;
+	border-radius: 1.5rem;	
+
+	.product-image {
+		position: relative;
+
+		img {
+			width: 100%;
+			min-height: 22rem;
+			border-radius: 1.5rem;
+		}
+
+		.product-rating {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			bottom: 1.5rem;
+		}
+	}
+
+	.product-details {
+		width: 100%;
+	}
+	
+	.product-thumbnail {
+		img {
+			max-width: 6rem;
+		}
+	}
+
+	.product-price {
+		span {
+			font-family: $heading-font;
+			font-size: 1.5rem;
+			font-weight: bold;
+			line-height: 1;
+			color: #3b3d32;
+		}
+
+		del {
+			font-family: $heading-font;
+			font-size: 1rem;
+			margin-left: 0.5rem;
+			font-style: italic;
+			color: #cbaea7;
+			text-decoration: none;
+		}
+	}
+
+	.product-title {
+		font-family: $body-font;
+		font-weight: 400;
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05rem;
+	}
+
+	.product-rating {
+		line-height: 1;
+
+		i {
+			color: #eed4ab;
+			font-size: 0.75rem;
+			padding: 0.1rem;
+
+			&.empty {
+				color: rgba(#eed4ab, 0.5);
+			}
+		}
+	}
+
+	.add-to-cart {
+		background-image: url(../images/icons/shop-icon.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		padding: 1rem;
+		font-size: 1.125rem;
+		color: #fff;
+		font-weight: 600;
+	}
+
+	.add-to-wishlist {
+		position: absolute;
+		top: 1.5rem;
+		right: 0;
+		color: $black;
+		font-size: 1.25rem;
+		line-height: 1;			
+		padding: 0.5rem 0.8rem;
+		color: #e7d3cf;
+		border-top-left-radius: 1rem;
+		border-bottom-left-radius: 1rem;
+		background-color: $light;
+
+		@include transition(all 0.3s ease-in-out);				
+
+		&:hover {
+			color: $theme-color;
+		}
+	}
+}
+
+.onbest,
+.ontop,
+.onnew,
+.onhot,
+.onsale {
+    position: absolute;
+    left: -0.8rem;
+    top: 1.75rem;
+	font-family: $heading-font;
+    font-size: .75rem;
+    font-weight: 700;
+	padding: 0rem 1rem;
+    z-index: 2;
+	border-radius: 2rem;
+	color: $white;
+
+	@include media-breakpoint-down(lg) {
+		left: 1rem;
+	}
+}
+
+.ontop {
+	background-color: #f86aa3;
+}
+
+.onnew {
+	background-color: #6acef8;
+}
+
+.onbest {
+	background-color: $theme-color;
+}
+
+.onsale {
+	background-color: #accd24;
+}
+
+
+/* Ads
+-----------------------------------------------------------------*/
+.ads {
+    position: relative;
+    display: block;
+	margin-bottom: 1rem;
+
+    .ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+			border-radius: 1rem;
+        }
+    }
+
+    .ads-body {
+        position: relative;
+        z-index: 1;
+		
+		h2 {
+			line-height: 1;
+		}
+
+		a {
+			font-size: 1.25rem;
+			letter-spacing: 0.05rem;
+			text-decoration: none;
+
+			&:before {
+				position: relative;
+				display: inline-block;
+				content: "";
+				width: 1.5rem;
+				height: 2px;
+				background-color: $white;
+				margin-right: 1rem;
+				vertical-align: middle;
+			}
+
+			&.border-0 {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&.ads1 {
+		img {
+			min-height: 26.5rem;
+			border-radius: 1.5rem;
+		}
+	}
+}
