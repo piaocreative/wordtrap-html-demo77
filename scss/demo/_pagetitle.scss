@@ -23,7 +23,6 @@
 	left: 0;
 
 	.title {
-		font-family: $heading-font;
 		line-height: 1.2;
 		font-weight: 400;
 	}
@@ -51,12 +50,10 @@
 
 	.go-home-link {
 		display: inline-block;
-		font-family: $body-font;
 		font-size: 0.8125rem;
 		padding: 0.5rem 1rem;
 		border-radius: 2rem;
 		border: 1px solid #d1b6b0;
-		text-decoration: none;
 		line-height: 1;
 		color: #d1b6b0;
 

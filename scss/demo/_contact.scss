@@ -10,18 +10,6 @@
 		font-size: 0.875rem;
 		color: #caaca5;
 	}
-
-	input {
-		font-size: 0.875rem;
-	}
-
-	button {
-		padding: 1rem 2.5rem;
-	}
-
-	textarea {
-		border-radius: 1.5rem;
-	}
 }
 
 .contact-social {
@@ -60,18 +48,12 @@
 					padding: 0.5rem;
 					font-size: 1.125rem;
 				}
-
-				&.contact {
-					color: $primary !important;
-					background-color: $white;
-					border-radius: 50%;
-				}
 			}
 		}
 	}
 }
 
-.map {
+#map {
 	position: absolute;
 	top: 1rem;
 	right: 0;
